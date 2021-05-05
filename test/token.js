@@ -11,13 +11,14 @@ contract('Erc20token', () => {
     })
 
     it('has a name', async () => {
-        await token.name();
-        assert(_name);
+        const name = await token.name();
+        assert.equal(name, _name);
         console.log(_name);
     })
     it('has a symbol', async () => {
-        expect(await token.symbol() == _symbol);
-        console.log(_symbol);
+        const name = await token.name();
+        assert.equal(name, _name);
+        console.log(_name);
     })
 
 

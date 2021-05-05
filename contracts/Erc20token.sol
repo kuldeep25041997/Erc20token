@@ -7,5 +7,5 @@ contract Erc20token is ERC20 {
     constructor(
         string memory name,
         string memory symbol
-    ) ERC20("name", "symbol") {}
+    ) ERC20(name, symbol) {}
 }
