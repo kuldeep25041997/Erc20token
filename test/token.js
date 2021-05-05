@@ -11,7 +11,8 @@ contract('Erc20token', () => {
     })
 
     it('has a name', async () => {
-        expect(await token.name() == "Kuldeep");
+        await token.name();
+        assert(_name);
         console.log(_name);
     })
     it('has a symbol', async () => {
