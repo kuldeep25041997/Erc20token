@@ -16,9 +16,9 @@ contract('Erc20token', () => {
         console.log(_name);
     })
     it('has a symbol', async () => {
-        const name = await token.name();
-        assert.equal(name, _name);
-        console.log(_name);
+        const symbol = await token.symbol();
+        assert.equal(symbol, _symbol);
+        console.log(_symbol);
     })
 
 
